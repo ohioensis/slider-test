@@ -1,0 +1,12 @@
+mixin slider()
+	+b.slider&attributes(attributes)
+		+e.slider-range
+		+e.slides
+			+e.INPUT.slides-item-input(type='radio' name='slide' id='no-skills')
+			+e.LABEL.slides-item-label(for='no-skills') Не владею
+			+e.INPUT.slides-item-input(type='radio' name='slide' id='some-skills' checked)
+			+e.LABEL.slides-item-label(for='some-skills') Использую готовые решения
+			+e.INPUT.slides-item-input(type='radio' name='slide' id='good-skills')
+			+e.LABEL.slides-item-label(for='good-skills') Использую готовые решения<br> и умею их переделывать
+			+e.INPUT.slides-item-input(type='radio' name='slide' id='exellent-skills')
+			+e.LABEL.slides-item-label(for='exellent-skills') Пишу сложный JS с нуля
